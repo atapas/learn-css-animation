@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Simple animation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .swing {
+            float: left;
+            margin: 20px;
+            animation: swing  ease-in-out 1s infinite alternate;
+            transform-origin: center -20px;
+        }
+
+        .swing img {
+            border: 5px solid #f8f8f8;
+            display: block;
+            width: 200px;
+            height: 250px;
+        }
+
+        .swing figcaption {
+            text-align: center;
+        }
+
+        .swing:after{
+            content: '';
+            position: absolute;
+            width: 20px; 
+            height: 20px;
+            border: 1.5px solid #ffffff;
+            top: -10px; 
+            left: 50%;
+            z-index: 0;
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(45deg);
+        }
+       
+        .swing:before{
+            content: '';
+            position: absolute;
+            top: -23px;
+            left: 50%;
+            display: block;
+            height: 44px;
+            width: 47px;
+            background-image: url(./images/screw-head.png);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            z-index: 16;
+        }
+        
+        @keyframes swing {
+            0% { transform: rotate(3deg); }
+            100% { transform: rotate(-3deg); }
+        }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 10px;">
+      <a href="/index.html">Home</a>
+    </div>
+    <div style="margin-top: 20px;">
+        <figure class="swing">
+            <img src="./images/rajni_image.jpg" alt="rajni"></img>
+            <figcaption>Rajinikanth</figcaption>
+        </figure>
+        <figure class="swing">
+            <img src="./images/chuckn_image.png" alt="chuck"></img>
+            <figcaption>Chuck Norris</figcaption>
+        </figure>
+        <figure class="swing">
+            <img src="./images/jackiechan_image.png" alt="chan"></img>
+            <figcaption>Jackie Chan</figcaption>
+        </figure>
+        <figure class="swing">
+            <img src="./images/bean.png" alt="bean"></img>
+            <figcaption>Mr. Bean</figcaption>
+        </figure>
+    </div>
+  </body>
+</html>

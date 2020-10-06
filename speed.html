@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Short-hand</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      div.speed {
+        width: 100px;
+        height: 50px;
+        color: #000000;
+        background-color: orange;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 4px;
+        position: relative;
+        text-align: center;
+        animation: move 5s infinite;
+      }
+      div#linear {
+        animation-timing-function: linear;
+      }
+      div#ease {
+        animation-timing-function: ease;
+      }
+      div#easeIn {
+        animation-timing-function: ease-in;
+      }
+      div#easeOut {
+        animation-timing-function: ease-out;
+      }
+      div#easeInOut {
+        animation-timing-function: ease-in-out;
+      }
+      div#custom {
+        animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+      }
+
+      @keyframes move {
+        0% {background-color: orange; left: -100px; top: 0px;}
+        100% {background-color: green; color: white; left: 200px; top: 0px;}
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 10px;">
+      <a href="/index.html">Home</a>
+    </div>
+    <div class="speed" id="linear">linear</div>
+    <div class="speed" id="ease">ease</div>
+    <div class="speed" id="easeIn">ease-in</div>
+    <div class="speed" id="easeOut">ease-out</div>
+    <div class="speed" id="easeInOut">ease-in-out</div>
+    <div class="speed" id="custom">Custom</div>
+  </body>
+</html>

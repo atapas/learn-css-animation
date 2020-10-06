@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Keyframe with Percentage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      div.percentage {
+        width: 300px;
+        height: 200px;
+        color: #000000;
+        background-color: orange;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        animation-name: percentage;
+        animation-duration: 5s;
+      }
+
+      @keyframes percentage {
+        0% {background-color: orange;}
+        25% {background-color: green; color: white;}
+        50% {background-color: white; color: black;}
+        100% {background-color: red; color: white;}
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 10px;">
+      <a href="/index.html">Home</a>
+    </div>
+    <div class="percentage">
+      My Keyframe is defined with percentages(%)
+      <p>
+       
+          0% => 25% => 50% => 100%
+        
+      </p>
+    </div>
+  </body>
+</html>

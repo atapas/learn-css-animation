@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Simple animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      div.simple {
+        width: 200px;
+        height: 200px;
+        color: #000000;
+        background-color: orange;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        animation-name: simple;
+        animation-duration: 5s;
+      }
+
+      @keyframes simple {
+        from {background-color: orange;}
+        to {background-color: green; color: white;}
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 10px;">
+      <a href="/index.html">Home</a>
+    </div>
+    <div class="simple">I'm so animated</div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Short-hand</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      div.sh {
+        width: 100px;
+        height: 100px;
+        color: #000000;
+        background-color: orange;
+        padding: 10px;
+        border-radius: 4px;
+        position: relative;
+        text-align: center;
+        animation: short-hand 5s linear 2s infinite alternate-reverse;
+      }
+
+      @keyframes short-hand {
+        0% {background-color: orange; left: 0px; top: 0px;}
+        25% {background-color: green; color: white; left:200px; top:0px;}
+        50% {background-color: red; color: white; left:200px; top:200px;}
+        75% {background-color: white; color: black; left:0px; top:200px;}
+        100% {background-color: yellow; color: black; left:0px; top:0px;}
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 10px;">
+      <a href="/index.html">Home</a>
+    </div>
+    <div class="sh">I'm moved!</div>
+  </body>
+</html>
