@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Multiple Animations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      div.multiple {
+        width: 200px;
+        height: 200px;
+        color: #000000;
+        background-color: orange;
+        padding: 40px;
+        border-radius: 140px;
+        position: relative;
+        text-align: center;
+      }
+
+      div#multiple-h {
+        animation: move-h 3s linear infinite alternate, 
+                   shape 3s ease-out infinite alternate;
+      }
+
+      div#multiple-v {
+        animation: move-v 3s linear infinite alternate, 
+                   shape 3s ease-out infinite alternate;
+      }
+
+      @keyframes move-h {
+        0% {background-color: orange; left: -200px; top: 0px;}
+        25% {background-color: green; color: white; left: 0px; top:0px;}
+        50% {background-color: white; color: black; left: 200px; top: 0px;}
+        100% {background-color: red; color: white; left: 0px; top: 0px;}
+      }
+
+      @keyframes move-v {
+        0% {background-color: red; color: white; left: 0px; top: 200px;}
+        25% {background-color: white; color: black; left: 200px; top:200px;}
+        50% {background-color: green; color: white; left: 200px; top: 0px;}
+        100% {background-color: orange; left: -200px; top: 0px;}
+      }
+
+      @keyframes shape {
+        0% {transform: scale(.3);}
+        25% {transform: scale(.5);}
+        100% {transform: scale(1);}
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 10px;">
+      <a href="/index.html">Home</a>
+    </div>
+    <div class="multiple" id="multiple-h">I'm Bunny</div>
+    <div class="multiple" id="multiple-v">I'm Ginny</div>
+  </body>
+</html>
