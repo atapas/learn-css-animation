@@ -3,25 +3,25 @@
     <title>Simple animation</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        .swing {
+        .wave {
             float: left;
             margin: 20px;
-            animation: swing  ease-in-out 0.5s infinite alternate;
+            animation: wave  ease-in-out 0.5s infinite alternate;
             transform-origin: center -20px;
         }
 
-        .swing img {
+        .wave img {
             border: 5px solid #f8f8f8;
             display: block;
             width: 200px;
             height: 250px;
         }
 
-        .swing figcaption {
+        .wave figcaption {
             text-align: center;
         }
 
-        .swing:after{
+        .wave:after{
             content: '';
             position: absolute;
             width: 20px; 
@@ -35,7 +35,7 @@
             transform: rotate(45deg);
         }
        
-        .swing:before{
+        .wave:before{
             content: '';
             position: absolute;
             top: -23px;
@@ -49,7 +49,7 @@
             z-index: 16;
         }
         
-        @keyframes swing {
+        @keyframes wave {
             0% { transform: rotate(3deg); }
             100% { transform: rotate(-3deg); }
         }
@@ -60,19 +60,19 @@
       <a href="/index.html">Home</a>
     </div>
     <div style="margin-top: 20px;">
-        <figure class="swing">
+        <figure class="wave">
             <img src="./images/rajni_image.jpg" alt="rajni"></img>
             <figcaption>Rajinikanth</figcaption>
         </figure>
-        <figure class="swing">
+        <figure class="wave">
             <img src="./images/chuckn_image.png" alt="chuck"></img>
             <figcaption>Chuck Norris</figcaption>
         </figure>
-        <figure class="swing">
+        <figure class="wave">
             <img src="./images/jackiechan_image.png" alt="chan"></img>
             <figcaption>Jackie Chan</figcaption>
         </figure>
-        <figure class="swing">
+        <figure class="wave">
             <img src="./images/bean.png" alt="bean"></img>
             <figcaption>Mr. Bean</figcaption>
         </figure>
