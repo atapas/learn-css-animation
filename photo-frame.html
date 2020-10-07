@@ -7,8 +7,16 @@
         .wave {
             float: left;
             margin: 20px;
-            animation: wave  ease-in-out 0.5s infinite alternate;
+            animation: wave 
+                       ease-in-out 
+                       0.5s 
+                       infinite 
+                       alternate;
             transform-origin: center -20px;
+        }
+
+        .wave:hover {
+            animation-play-state: paused;
         }
 
         .wave img {
