@@ -8,6 +8,4 @@ Please feel free to clone the repo and try running it locally. This project is a
 
 Build Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/b5d8269a-b721-4fb6-9427-50a340c9aa51/deploy-status)](https://app.netlify.com/sites/css-animation-fun/deploys) 
 
-You can follow this project for the future updates as I keep updating the source code. 
-
 <img src="images/photo%20gallery.png" alt="cover" />
